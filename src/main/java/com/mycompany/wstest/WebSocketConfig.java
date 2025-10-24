@@ -10,7 +10,7 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 public class WebSocketConfig implements WebSocketConfigurer {
 	
 	
-	// 3. autowired 하거나 final+생성자 해주거나
+	// 3. autowired 하거나 final+생성자 해주거나 -> ChatHandler에 @Component나 @Bean 적어줘야 함!!
 	private final ChatHandler chatHandler;
 	public WebSocketConfig(ChatHandler chatHandler) {
 		this.chatHandler = chatHandler;
